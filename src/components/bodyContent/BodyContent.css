@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.body-container {
+    width: 100%;
+    margin: 0;
+    min-height: 120vh;
+    background: url(/images/background.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: center;
+}
+
+.body-content {
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+p {
+    font-size: 18px;
+    margin: 0px;
+}
+
+.landing-text {
+    margin: 0px;
+    font-size: 11rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 69px;
+        transition: 3000ms;
+    }
+}
+
+/*********************************************************
+INTRO PAGE BUTTON STYLING
+**********************************************************/
+button {
+    font-weight: 100;
+    color: black;
+    font-size: 1rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    border-radius: 2rem;
+    background: black;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    animation: animate 2s linear infinite;
+  }
+
+@keyframes animate {
+    10%{
+        box-shadow: 0 0 0 0 #fbfcfd;
+    }
+    45%{
+        box-shadow: 0 0 0 0 #fbfcfd, 0 0 4px 0 #fbfcfd;
+    }
+    75%{
+        box-shadow: 0 0 0 0 #fbfcfd, 0 0 8px 0 #fbfcfd;
+    }
+    100%{
+        box-shadow: 0 0 0 #fbfcfd;
+    }
+}
+
+/*********************************************************
+Here is the CSS for the intro page
+**********************************************************/
+.intro-page{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.intro-logo {
+    position: absolute;
+    margin: 3rem;
+    top: 0;
+    right: 0;
+    height: 120px;
+    width: 120px;
+}
+
+.intro-logo img {
+    width: 100%;
+    position: center;
+}
+
+.intro-text{
+    font-size: 3rem;
+    color: blanchedalmond;
+}
+
+.slider {
+    background: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    transform: translateY(-100%);
+}
+
+.hide-text {
+    background: black;
+    overflow: hidden;
+}
+
+.hide-text span {
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+/*********************************************************
+Here are the bubbles
+**********************************************************/
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -200px;
+    visibility: hidden;
+}
+
+@keyframes bubble {
+    0%{
+        transform: translateY(0vh);
+        opacity: 0;
+    }
+    10% {
+        visibility: visible;
+    }
+    20%{
+        opacity: 0.05;
+    }
+    90%{
+        opacity: 0.05;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1) {
+    width: 25px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 35px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+    width: 75px;
+    animation-duration: 10s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+    width: 35px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 4s;
+    animation-duration: 5.5s;
+    width: 50px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+    width: 35px;
+    animation-duration: 6s;
+}
+.bubbles img:nth-child(8) {
+    animation-delay: 4.5s;
+}

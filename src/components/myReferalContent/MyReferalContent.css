@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+}
+
+.container {
+    background: transparent;
+}
+
+.referal-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    margin: 15px 25px 25px 15px;
+  }
+
+h2 {
+    padding: 25px 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #006666;
+    font-size: 24px;
+    display: flex;
+    justify-self: center;
+}
+
+.box {
+    max-width: 450px;
+}
+
+.box img {
+    padding: 15px;
+    height: 350px;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 0;
+    transition: 1s;
+}
+
+.box img:hover{
+    scale: 1.2;
+}

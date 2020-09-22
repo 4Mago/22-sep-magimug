@@ -1,0 +1,20 @@
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+    background-color: teal;
+}
+
+a:li {
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.navbar-footer img {
+    height: 75px;
+}
+
+.navbar-footer {
+    top: 150px;
+}
