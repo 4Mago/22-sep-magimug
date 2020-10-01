@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import { gsap } from 'gsap'
 
 function IntroPage() {
@@ -61,13 +61,17 @@ function IntroPage() {
         })
     }, [])
 
-    const timeline = useMemo(() => gsap.to({paused: true}), [])
-
+const timeline = gsap.to({paused: true})
+    
+// useMemo(() => gsap.to({paused: true}), []);
+    // play this onClick
     useEffect(() => {
+        // if this happends
         if (play) {
+            // 
         timeline.play()
         }
-    }, [play])
+    })
 
     return (
         <div ref={introPage} className='intro-page'>
@@ -82,7 +86,7 @@ function IntroPage() {
                 <h1 className='hide-text'>
                 <span ref={introAnimation3} className='text'>pretty cheap.</span>
                 </h1>
-            <button ref={introAnimation4}>
+            <button href={introAnimation4} onClick={() => setPlay(!play)}>
             Enter </button>
             </div>
 <div ref={introSlider} className='slider'></div>
