@@ -45,16 +45,17 @@ function IntroPage() {
 
     useEffect(() => {
         gsap.to(introPage.current, {
-            y: '100%',
+            y: '120vw',
             ease: 'power1.out',
             duration: 1,
-            delay: 6
+            delay: 6,
+            overflow: hidden
         })
     }, [])
 
     useEffect(() => {
         gsap.to(introSlider.current, {
-            y: '200%',
+            y: '200vw',
             ease: 'none',
             duration: 0.5,
             delay: 6.5
